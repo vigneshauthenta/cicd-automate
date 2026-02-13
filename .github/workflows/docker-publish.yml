@@ -39,7 +39,6 @@ jobs:
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:${{ github.sha }}
-            ${{ env.IMAGE }}:${{ github.ref_name }}
 
       - name: Notify
         run: echo "Pushed ${{ env.IMAGE }}:latest and other tags to Docker Hub"
